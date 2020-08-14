@@ -1,21 +1,20 @@
-Zigbee2Tasmota Zigbee Coordinator
-=================================
+D1 Mini Zigbee Shield
+=====================
 
-Combines a Wemos D1 Mini and a Z-0001 module with CC2531 CC.
+Zigbee shield for Wemos D1 Mini, so that it can either be a Zigbee
+Client or a Zigbee Coordinator running Zigbee2Tasmota.
 
-Uses the Zigbee2Tasmota firmware to operate as a Zigbee Coordinator.
-
-![PCB render](Images/Z2T-v1_0-render-600.jpg)
+![PCB render](Images/D1ZIG-v1_0-render.jpg)
 
 Features:
 
  * ESP8266 to run Zigbee2Tasmota
- * CC2531 Zigbee interface
+ * CC2530 Zigbee interface
  * 3D-printable case
 
 More information is available at:
 
-  https://www.superhouse.tv/z2t
+  https://www.superhouse.tv/d1zig
 
 
 Hardware
@@ -23,23 +22,6 @@ Hardware
 The "Hardware" directory contains the PCB design as an EAGLE project.
 EAGLE PCB design software is available from Autodesk free for
 non-commercial use.
-
-
-Firmware
---------
-The "Firmware" directory contains example firmware as an Arduino
-project.
-
-
-Enclosure
----------
-The "Enclosure" directory contains STLs for a case that can be
-3D-printed.
-
-The two halves of the case should be printed with the flat face down to
-the printer bed.
-
-The case can be held shut by 8mm M3 bolts.
 
 
 Credits

@@ -188,7 +188,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:PWBxkDpzQyyMzbfsqHB-Hw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="685bdee6-71f1-e1b6-271a-f2f8bcc4fce5" latestrevisionid="41cee399-37ef-49f1-aa83-3bc3c8181c6e" lastsyncedrevisionid="41cee399-37ef-49f1-aa83-3bc3c8181c6e" lastboardhashguid="0311aa1b-ed58-3521-769f-f2ac43602d35" lastpushedtime="2020-08-14T12:21:04Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:PWBxkDpzQyyMzbfsqHB-Hw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="685bdee6-71f1-e1b6-271a-f2f8bcc4fce5" latestrevisionid="11357226-7037-462d-b588-9639fd7707ab" lastsyncedrevisionid="11357226-7037-462d-b588-9639fd7707ab" lastboardhashguid="18cfa270-1804-2095-31bd-4cfbf910e7bf" lastpushedtime="2020-08-15T01:10:45Z" linktopcb3d="true"/>
 <plain>
 <wire x1="1.27" y1="25.4" x2="32.29" y2="25.4" width="0.0254" layer="20"/>
 <wire x1="33.56" y1="24.13" x2="33.56" y2="20.32" width="0.0254" layer="20"/>
@@ -630,31 +630,37 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <clearance class="1" value="0.1524"/>
 </class>
 </classes>
-<designrules name="dirt_cheap_dirty_boards.v1">
-<description language="en">&lt;b&gt;Dirty Cheap Dirty Board Design Rules&lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;Min width/Spacing: 5/5mil
-&lt;br&gt;Min diameter of finished hole 12mil</description>
+<designrules name="SuperHouse-Design-Rules">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;SuperHouse Design Rules&lt;/b&gt;
+&lt;p&gt;
+These rules have been set to have limits that are safe for most board fabs, while still allowing polygon pours into most places. Vias 0.5mm and smaller are tented.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="5mil"/>
-<param name="mdWirePad" value="5mil"/>
-<param name="mdWireVia" value="5mil"/>
-<param name="mdPadPad" value="5mil"/>
-<param name="mdPadVia" value="5mil"/>
-<param name="mdViaVia" value="5mil"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="18mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="5mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -663,15 +669,15 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="6mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="6mil"/>
+<param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -679,16 +685,16 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="0"/>
+<param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
-<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="0.5mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -698,7 +704,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="0"/>
+<param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
 <param name="checkNames" value="1"/>
@@ -804,10 +810,10 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </pass>
 </autorouter>
 <elements>
-<element name="J3" library="freetronics-original" package="1X08" value="" x="7.33" y="1.27" smashed="yes">
+<element name="J1" library="freetronics-original" package="1X08" value="" x="7.33" y="1.27" smashed="yes">
 <attribute name="VALUE" x="6.06" y="-1.905" size="1.27" layer="27"/>
 </element>
-<element name="J4" library="freetronics-original" package="1X08" value="" x="7.33" y="24.13" smashed="yes">
+<element name="J2" library="freetronics-original" package="1X08" value="" x="7.33" y="24.13" smashed="yes">
 <attribute name="VALUE" x="6.06" y="20.955" size="1.27" layer="27"/>
 </element>
 <element name="LED1" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" package="LED-0603" package3d_urn="urn:adsk.eagle:package:7066240/3" value="BLUE" x="32" y="22.25" smashed="yes" rot="R270">
@@ -847,7 +853,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <vertex x="33.56" y="24.13" curve="90"/>
 <vertex x="32.29" y="25.4"/>
 </polygon>
-<contactref element="J4" pad="7"/>
+<contactref element="J2" pad="7"/>
 <contactref element="LED1" pad="C"/>
 <contactref element="MOD1" pad="1"/>
 <wire x1="32" y1="21.488" x2="31.762" y2="21.25" width="0.254" layer="1"/>
@@ -871,11 +877,11 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <vertex x="33.56" y="20.32"/>
 <vertex x="33.56" y="24.13" curve="90"/>
 </polygon>
-<via x="8.5" y="12.5" extent="1-16" drill="0.5"/>
-<via x="8.5" y="17.5" extent="1-16" drill="0.5"/>
+<via x="8" y="13" extent="1-16" drill="0.5"/>
+<via x="8" y="18" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="D1_CC_RST">
-<contactref element="J4" pad="3"/>
+<contactref element="J2" pad="3"/>
 <contactref element="MOD1" pad="24"/>
 <wire x1="14.72" y1="4.7" x2="14.72" y2="8.78" width="0.254" layer="1"/>
 <wire x1="4" y1="22" x2="4.5" y2="22.5" width="0.254" layer="1"/>
@@ -885,7 +891,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="4.5" y1="22.5" x2="10.78" y2="22.5" width="0.254" layer="1"/>
 </signal>
 <signal name="D2_P2_2_DC">
-<contactref element="J4" pad="4"/>
+<contactref element="J2" pad="4"/>
 <contactref element="MOD1" pad="3"/>
 <wire x1="12.18" y1="20.7" x2="12.18" y2="22.18" width="0.254" layer="1"/>
 <wire x1="12.18" y1="22.18" x2="12.5" y2="22.5" width="0.254" layer="1"/>
@@ -894,52 +900,44 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="14.95" y1="22.95" x2="14.95" y2="24.13" width="0.254" layer="1"/>
 </signal>
 <signal name="D6_P2_1_DD">
-<contactref element="J3" pad="5"/>
+<contactref element="J1" pad="5"/>
 <contactref element="MOD1" pad="4"/>
-<wire x1="17.49" y1="1.27" x2="17.49" y2="10.01" width="0.254" layer="16"/>
-<wire x1="17.49" y1="10.01" x2="11" y2="16.5" width="0.254" layer="16"/>
-<via x="11" y="16.5" extent="1-16" drill="0.5"/>
-<wire x1="11" y1="16.5" x2="11" y2="20.61" width="0.254" layer="1"/>
+<wire x1="17.49" y1="1.27" x2="17.49" y2="9.01" width="0.254" layer="16"/>
+<wire x1="17.49" y1="9.01" x2="11" y2="15.5" width="0.254" layer="16"/>
+<via x="11" y="15.5" extent="1-16" drill="0.5"/>
+<wire x1="11" y1="15.5" x2="11" y2="20.61" width="0.254" layer="1"/>
 <wire x1="11" y1="20.61" x2="10.91" y2="20.7" width="0.254" layer="1"/>
 </signal>
 <signal name="D7_P0_3">
-<contactref element="J3" pad="6"/>
-<wire x1="20.03" y1="1.27" x2="20" y2="1.3" width="0.254" layer="16"/>
+<contactref element="J1" pad="6"/>
 <contactref element="MOD1" pad="20"/>
-<wire x1="20.03" y1="1.27" x2="20" y2="1.3" width="0.254" layer="1"/>
-<wire x1="20" y1="1.3" x2="19.5" y2="2" width="0.254" layer="1"/>
-<wire x1="19.5" y1="2" x2="19" y2="2.5" width="0.254" layer="1"/>
-<wire x1="10.5" y1="2.5" x2="9.64" y2="3.36" width="0.254" layer="1"/>
+<wire x1="9.64" y1="3.36" x2="10.5" y2="2.5" width="0.254" layer="1"/>
 <wire x1="9.64" y1="3.36" x2="9.64" y2="4.7" width="0.254" layer="1"/>
-<wire x1="19" y1="2.5" x2="10.5" y2="2.5" width="0.254" layer="1"/>
+<wire x1="18.8" y1="2.5" x2="20.03" y2="1.27" width="0.254" layer="1"/>
+<wire x1="10.5" y1="2.5" x2="18.8" y2="2.5" width="0.254" layer="1"/>
 </signal>
 <signal name="D8_P0_2">
-<contactref element="J3" pad="7"/>
+<contactref element="J1" pad="7"/>
 <contactref element="MOD1" pad="21"/>
 <wire x1="22.57" y1="1.27" x2="20.84" y2="3" width="0.254" layer="1"/>
 <wire x1="11.5" y1="3" x2="10.91" y2="3.59" width="0.254" layer="1"/>
 <wire x1="10.91" y1="3.59" x2="10.91" y2="4.7" width="0.254" layer="1"/>
 <wire x1="20.84" y1="3" x2="11.5" y2="3" width="0.254" layer="1"/>
 </signal>
-<signal name="RX">
-<contactref element="J4" pad="2"/>
-</signal>
-<signal name="TX">
-<contactref element="J4" pad="1"/>
-</signal>
 <signal name="3.3V">
-<contactref element="J3" pad="8"/>
+<contactref element="J1" pad="8"/>
 <contactref element="R1" pad="2"/>
 <contactref element="MOD1" pad="2"/>
-<wire x1="25.11" y1="1.27" x2="25" y2="1.38" width="0.254" layer="1"/>
 <wire x1="29" y1="22.238" x2="25.988" y2="22.238" width="0.254" layer="1"/>
 <wire x1="21.75" y1="18" x2="14" y2="18" width="0.254" layer="1"/>
 <wire x1="25.988" y1="22.238" x2="21.75" y2="18" width="0.254" layer="1"/>
 <wire x1="13.45" y1="20.7" x2="13.45" y2="18.55" width="0.254" layer="1"/>
 <wire x1="13.45" y1="18.55" x2="14" y2="18" width="0.254" layer="1"/>
 <wire x1="21.75" y1="7" x2="21.75" y2="18" width="0.254" layer="1"/>
-<wire x1="25" y1="1.38" x2="25" y2="3.75" width="0.254" layer="1"/>
-<wire x1="25" y1="3.75" x2="21.75" y2="7" width="0.254" layer="1"/>
+<wire x1="25" y1="3.75" x2="24.875" y2="3.875" width="0.254" layer="1"/>
+<wire x1="24.875" y1="3.875" x2="21.75" y2="7" width="0.254" layer="1"/>
+<wire x1="25" y1="3.75" x2="25.11" y2="3.64" width="0.254" layer="1"/>
+<wire x1="25.11" y1="3.64" x2="25.11" y2="1.27" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>
@@ -956,26 +954,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="19,16,2b55c17a553948e8"/>
-<approved hash="19,16,4356856bab2d8eeb"/>
-<approved hash="19,16,fa48214a39fc4106"/>
-<approved hash="19,16,b460e3db8cf778b4"/>
-<approved hash="19,16,405de74859fa5914"/>
-<approved hash="19,16,d672f9d934f6bca6"/>
-<approved hash="19,16,52797dfff359bf26"/>
-<approved hash="19,16,56ba8ea60e39b5dc"/>
-<approved hash="19,16,4c6b47ff135b7f34"/>
-<approved hash="19,16,b8ab30a61e38f1ce"/>
-<approved hash="19,16,4e6ded4bd9fbf920"/>
-<approved hash="19,16,484617db24f3f893"/>
-<approved hash="19,16,c08cc23f5362322b"/>
-<approved hash="19,16,288db62d79703027"/>
-<approved hash="19,16,f352754b8f0f8aef"/>
-<approved hash="19,16,099efb6f2076317c"/>
-<approved hash="19,16,d99d037f66624b7e"/>
-<approved hash="19,16,099a234eb4541d79"/>
-<approved hash="19,16,cb8c66c8790203b1"/>
-<approved hash="19,16,3b8c86da4b1195bd"/>
+<approved hash="1,20,2224d2d4ddd72d27"/>
+<approved hash="1,20,53f8a308dd032df3"/>
+<approved hash="1,20,e85a50aa509ee86e"/>
 </errors>
 </board>
 </drawing>

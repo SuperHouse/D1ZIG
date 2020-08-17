@@ -1043,7 +1043,7 @@ Standard resistors.</description>
 </library>
 <library name="SuperHouse-Modules" urn="urn:adsk.eagle:library:11876743">
 <packages>
-<package name="E18-MS1PA-PCB" urn="urn:adsk.eagle:footprint:22620076/4" library_version="21">
+<package name="E18-MS1PA-PCB" urn="urn:adsk.eagle:footprint:22620076/5" library_version="22">
 <description>E18-MS1PA-PCB Zigbee module</description>
 <wire x1="8" y1="13.5" x2="-8" y2="13.5" width="0.2" layer="51"/>
 <wire x1="-8" y1="-13.5" x2="8" y2="-13.5" width="0.2" layer="51"/>
@@ -1067,15 +1067,15 @@ Standard resistors.</description>
 <smd name="6" x="-8" y="-8.41" dx="2" dy="0.8" layer="1"/>
 <smd name="7" x="-8" y="-9.68" dx="2" dy="0.8" layer="1"/>
 <smd name="8" x="-8" y="-10.95" dx="2" dy="0.8" layer="1"/>
-<smd name="9" x="-4.445" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="10" x="-3.175" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="11" x="-1.905" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="12" x="-0.635" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="13" x="0.635" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="14" x="1.905" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="15" x="3.175" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="16" x="4.445" y="-13.5" dx="2" dy="1" layer="1" rot="R270"/>
-<smd name="17" x="8" y="-11.05" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="9" x="-4.445" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="10" x="-3.175" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="11" x="-1.905" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="12" x="-0.635" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="13" x="0.635" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="14" x="1.905" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="15" x="3.175" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="16" x="4.445" y="-13.5" dx="2" dy="0.8" layer="1" rot="R270"/>
+<smd name="17" x="8" y="-10.95" dx="2" dy="0.8" layer="1" rot="R180"/>
 <smd name="18" x="8" y="-9.68" dx="2" dy="0.8" layer="1"/>
 <smd name="19" x="8" y="-8.41" dx="2" dy="0.8" layer="1"/>
 <smd name="20" x="8" y="-7.14" dx="2" dy="0.8" layer="1"/>
@@ -1090,7 +1090,7 @@ Standard resistors.</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="E18-MS1PA-PCB" urn="urn:adsk.eagle:package:22620078/5" type="model" library_version="21">
+<package3d name="E18-MS1PA-PCB" urn="urn:adsk.eagle:package:22620078/6" type="model" library_version="22">
 <description>E18-MS1PA-PCB Zigbee module</description>
 <packageinstances>
 <packageinstance name="E18-MS1PA-PCB"/>
@@ -1131,7 +1131,7 @@ Standard resistors.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="E18-MS1PA" urn="urn:adsk.eagle:component:22637552/3" prefix="MOD" library_version="21">
+<deviceset name="E18-MS1PA" urn="urn:adsk.eagle:component:22637552/4" prefix="MOD" library_version="22">
 <gates>
 <gate name="G$1" symbol="E18-MS1PA-PCB" x="0" y="0"/>
 </gates>
@@ -1162,7 +1162,7 @@ Standard resistors.</description>
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22620078/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22620078/6"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1211,10 +1211,10 @@ Standard resistors.</description>
 <part name="U$25" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="NC" device=""/>
 <part name="U$26" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="NC" device=""/>
 <part name="LED1" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7066240/3" value="BLUE"/>
-<part name="R1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="2K2"/>
+<part name="R1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="4K7"/>
 <part name="P+1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="GND4" library="freetronics-original" deviceset="GND" device=""/>
-<part name="MOD1" library="SuperHouse-Modules" library_urn="urn:adsk.eagle:library:11876743" deviceset="E18-MS1PA" device="" package3d_urn="urn:adsk.eagle:package:22620078/5"/>
+<part name="MOD1" library="SuperHouse-Modules" library_urn="urn:adsk.eagle:library:11876743" deviceset="E18-MS1PA" device="" package3d_urn="urn:adsk.eagle:package:22620078/6"/>
 <part name="GND5" library="freetronics-original" deviceset="GND" device=""/>
 <part name="P+4" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="U$10" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="NC" device=""/>
